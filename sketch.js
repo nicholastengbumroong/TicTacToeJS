@@ -46,10 +46,10 @@ function draw() {
         noLoop(); 
         let endText = createP('');
         endText.style('font-size', '32pt'); 
-        if (didPlayerWin){
+        if (didPlayerWin()){
             endText.html('Player wins!');
         }
-        else if (didAiWin){
+        else if (didAiWin()){
             endText.html('AI wins!');
         }
         else
