@@ -82,8 +82,9 @@ function mousePressed() {
 
     if (board[i][j] == '') {
         board[i][j] = human;
+        bestMove();
     }
-    bestMove();
+    
 }
 
 function getAvailableCells() {
