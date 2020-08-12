@@ -18,6 +18,7 @@ function bestMove() {
         }
     }
     board[bestMove.i][bestMove.j] = ai;
+    currentPlayer = human; 
 }
 
 function minimax(isMaximizing, alpha, beta) {
